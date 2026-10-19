@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A faith-rooted country boutique for thoughtfully chosen pieces for home and everyday living.">
+  <title>Cedar &amp; Grace | A country boutique</title>
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link rel="stylesheet" href="css/styles.css">
+  <script defer src="js/products.js"></script>
+  <script defer src="js/storage.js"></script>
+  <script defer src="js/shared.js"></script>
+  <script defer src="js/home.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Cedar and Grace home"><span class="brand-mark" aria-hidden="true">C<span>&amp;</span>G</span><span>cedar <i>&amp;</i> grace</span></a>
+    <nav class="site-nav" aria-label="Main navigation">
+      <a class="nav-link is-current" href="index.html" aria-current="page">Shop</a>
+      <a class="nav-link" href="profile.html">Profile</a>
+      <a class="nav-link cart-link" href="cart.html">Cart <span class="cart-count" data-cart-count>0</span></a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">Rooted in faith, gathered with care</p>
+        <h1>Find a little grace<br><em>in the everyday.</em></h1>
+        <p class="hero-description">A thoughtful country collection for home, gathering, and a well-loved wardrobe—chosen with a heart for modest living and the beauty of simple things.</p>
+        <a class="button button-dark" href="#collection">Wander the collection <span aria-hidden="true">↘</span></a>
+        <p class="hero-note"><span aria-hidden="true">✳</span> “Whatever is lovely” — a little reminder for the day</p>
+      </div>
+      <div class="hero-art" role="img" aria-label="A quiet still life in warm, earthy colors">
+        <div class="sun-disc"></div>
+        <div class="hero-vase vase-back"></div>
+        <div class="hero-vase vase-front"></div>
+        <div class="hero-stem stem-one"></div>
+        <div class="hero-stem stem-two"></div>
+        <div class="hero-orbit"></div>
+        <span class="hero-art-caption">A LITTLE BEAUTY IN THE ORDINARY</span>
+      </div>
+    </section>
+
+    <section class="collection section-wrap" id="collection">
+      <div class="section-heading">
+        <div><p class="eyebrow">Gathered for you</p><h2>Good things, chosen with care</h2></div>
+        <p class="collection-intro">Thoughtful accents for home, the road, and the everyday moments in between.</p>
+      </div>
+      <div class="catalog-tools" aria-label="Product filters">
+        <label class="search-control"><span class="visually-hidden">Search products</span><span aria-hidden="true">⌕</span><input id="product-search" type="search" placeholder="Search the collection…" autocomplete="off"></label>
+        <label class="select-control"><span class="visually-hidden">Filter by category</span><select id="category-filter"><option value="all">All departments</option></select></label>
+        <label class="select-control"><span class="visually-hidden">Sort products by price</span><select id="price-sort"><option value="featured">Sort: Curated</option><option value="low-high">Price: Low to high</option><option value="high-low">Price: High to low</option></select></label>
+      </div>
+      <p class="results-count" id="results-count" aria-live="polite"></p>
+      <div class="product-grid" id="product-grid"></div>
+      <div class="empty-state hidden" id="no-results">
+        <span class="empty-icon" aria-hidden="true">⌕</span><h3>Nothing gathered just yet</h3>
+        <p>Try another search or clear the filters to browse all our finds.</p>
+        <button class="button button-outline" id="clear-filters" type="button">Show the full collection</button>
+      </div>
+    </section>
+    <section class="closing-note">
+      <span aria-hidden="true">✳</span><p>A little beauty in the ordinary, grace in every season.</p><span aria-hidden="true">✳</span>
+    </section>
+  </main>
+
+  <footer class="site-footer"><a class="brand footer-brand" href="index.html"><span class="brand-mark" aria-hidden="true">C<span>&amp;</span>G</span><span>cedar <i>&amp;</i> grace</span></a><p>Rooted in faith. Gathered with care.</p><span>© <span data-year></span> Cedar &amp; Grace · A country boutique.</span></footer>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>

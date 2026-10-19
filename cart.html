@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Review the thoughtful finds in your Cedar & Grace shopping cart.">
+  <title>Your Cart | Cedar &amp; Grace</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <script defer src="js/products.js"></script>
+  <script defer src="js/storage.js"></script>
+  <script defer src="js/shared.js"></script>
+  <script defer src="js/cart.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Cedar and Grace home"><span class="brand-mark" aria-hidden="true">C<span>&amp;</span>G</span><span>cedar <i>&amp;</i> grace</span></a>
+    <nav class="site-nav" aria-label="Main navigation">
+      <a class="nav-link" href="index.html">Shop</a><a class="nav-link" href="profile.html">Profile</a><a class="nav-link cart-link is-current" href="cart.html" aria-current="page">Cart <span class="cart-count" data-cart-count>0</span></a>
+    </nav>
+  </header>
+  <main class="inner-page cart-page">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <ol><li><a href="index.html#collection" aria-label="Back to Shop">Shop</a></li><li><span aria-hidden="true">/</span></li><li><span aria-current="page">Cart</span></li></ol>
+    </nav>
+    <section class="page-intro cart-intro"><p class="eyebrow">Your good finds</p><h1>Your cart <span class="cart-heading-count" id="cart-heading-count"></span></h1><p>A few thoughtful finds, all in one place.</p></section>
+    <div class="cart-layout">
+      <section class="cart-items-panel" aria-label="Items in your cart">
+        <div class="cart-panel-heading"><h2>Your items</h2><button class="text-button hidden" id="clear-cart" type="button">Clear cart</button></div>
+        <div class="cart-items" id="cart-items"></div>
+        <div class="empty-state empty-cart hidden" id="empty-cart"><span class="empty-icon" aria-hidden="true">♡</span><h2>Your cart is taking a little breather</h2><p>It’s empty for now. Browse our collection for something lovely.</p><a class="button button-dark" href="index.html#collection">Browse the collection <span aria-hidden="true">↗</span></a></div>
+        <a class="continue-link" href="index.html#collection">← Back to Shop</a>
+      </section>
+      <aside class="order-summary" aria-label="Order summary">
+        <p class="eyebrow">The little details</p><h2>Order summary</h2>
+        <div class="summary-row"><span>Items <span id="summary-item-count">(0)</span></span><strong id="subtotal">$0.00</strong></div>
+        <div class="summary-row"><span>Shipping</span><strong class="shipping-note">On us</strong></div>
+        <div class="summary-total"><span>Total</span><strong id="cart-total">$0.00</strong></div>
+        <p class="summary-note">Shipping is on us in this little demo.</p>
+        <button class="button button-dark checkout-button" id="checkout" type="button" disabled>Continue to checkout <span aria-hidden="true">↗</span></button>
+        <p class="checkout-message" id="checkout-message" role="status" aria-live="polite"></p>
+        <p class="demo-note"><span aria-hidden="true">♡</span> Demo checkout only. No payment will be taken.</p>
+      </aside>
+    </div>
+  </main>
+  <footer class="site-footer"><a class="brand footer-brand" href="index.html"><span class="brand-mark" aria-hidden="true">C<span>&amp;</span>G</span><span>cedar <i>&amp;</i> grace</span></a><p>Rooted in faith. Gathered with care.</p><span>© <span data-year></span> Cedar &amp; Grace · A country boutique.</span></footer>
+</body>
+</html>
